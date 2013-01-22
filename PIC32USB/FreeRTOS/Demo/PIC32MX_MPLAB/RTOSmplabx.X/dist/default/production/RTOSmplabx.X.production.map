@@ -1,0 +1,69 @@
+Archive member included because of file (symbol)
+
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(set_core_sw0_leg_lib.o)
+                              build/default/production/_ext/332309696/port.o (SetCoreSW0)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(int_disable_interrupts_lib.o)
+                              build/default/production/_ext/1472/main.o (INTDisableInterrupts)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(int_restore_interrupts_lib.o)
+                              build/default/production/_ext/1472/main.o (INTRestoreInterrupts)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(int_enable_mv_int_lib.o)
+                              build/default/production/_ext/1472/main.o (INTEnableSystemMultiVectoredInt)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(int_enable_interrupts_lib.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libmchp_peripheral_32MX220F032D.a(int_enable_mv_int_lib.o) (INTEnableInterrupts)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1\libgcc.a(floatunsisf.o)
+                              build/default/production/_ext/821501661/serial.o (__floatunsisf)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(memcmp.o)
+                              build/default/production/_ext/449926602/tasks.o (memcmp)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(memcpy.o)
+                              build/default/production/_ext/449926602/queue.o (memcpy)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(memset.o)
+                              build/default/production/_ext/449926602/tasks.o (memset)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o (_bootstrap_exception_handler)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o (_on_reset)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o (_on_bootstrap)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o (_nmi_handler)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib/crt0.o (_general_exception_context)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libm.a(fp32.o)
+                              build/default/production/_ext/821501661/serial.o (fpsub)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(putchar.o)
+                              build/default/production/_ext/1472/printf-stdarg.o (putchar)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(strncpy.o)
+                              build/default/production/_ext/449926602/tasks.o (strncpy)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo)
+                              build/default/production/_ext/1472/main_full.o (_sprintf_cdnopuxX)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(_iob.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(putchar.o) (_iob)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(_fputc_simple.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(putchar.o) (fputc)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(sprintf_cdnopuxX.eo) (_vfprintf_cdnopuxX)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(_flsbuf_simple.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(_fputc_simple.o) (_flsbuf)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(ctype.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo) (_ctype)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1\libgcc.a(_udivdi3.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo) (__udivdi3)
+c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1\libgcc.a(_umoddi3.o)
+                              c:/programme/microchip/xc32/v1.10/bin/../lib/gcc/pic32mx/4.5.1/../../../../pic32mx/lib\libc.a(doprnt_cdnopuxX.eo) (__umoddi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+xHighPriorityTask   0x4               build/default/production/_ext/1163846883/QPeek.o
+xMediumPriorityTask
+                    0x4               build/default/production/_ext/1163846883/QPeek.o
+xHighPriorityNormallyEmptyTask2
+                    0x4               build/default/production/_ext/1163846883/IntQueue.o
+xHighPriorityNormallyFullTask1
+                    0x4               build/default/production/_ext/1163846883/IntQueue.o
+xHighPriorityNormallyEmptyTask1
+                    0x4               build/default/production/_ext/1163846883/IntQueue.o
+xHighestPriorityTask
+                    0x4               build/default/production/_ext/1163846883/QPeek.o
+xHighPriorityNormallyFullTask2
+                    0x4               build/default/production/_ext/1163846883/IntQueue.o
