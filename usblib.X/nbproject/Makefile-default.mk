@@ -44,12 +44,18 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 # Distribution Directory
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
+# Source Files Quoted if spaced
+SOURCEFILES_QUOTED_IF_SPACED="USB/Generic Device Driver/usb_function_generic.c" USB/usb_device.c usb_descriptors.c
+
 # Object Files Quoted if spaced
 OBJECTFILES_QUOTED_IF_SPACED="${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" ${OBJECTDIR}/USB/usb_device.o ${OBJECTDIR}/usb_descriptors.o
 POSSIBLE_DEPFILES="${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" ${OBJECTDIR}/USB/usb_device.o.d ${OBJECTDIR}/usb_descriptors.o.d
 
 # Object Files
 OBJECTFILES=${OBJECTDIR}/USB/Generic\ Device\ Driver/usb_function_generic.o ${OBJECTDIR}/USB/usb_device.o ${OBJECTDIR}/usb_descriptors.o
+
+# Source Files
+SOURCEFILES=USB/Generic Device Driver/usb_function_generic.c USB/usb_device.c usb_descriptors.c
 
 
 CFLAGS=
@@ -66,6 +72,9 @@ LDLIBSOPTIONS=
 FIXDEPS=fixDeps
 
 .build-conf:  ${BUILD_SUBPROJECTS}
+ifneq ($(INFORMATION_MESSAGE), )
+	@echo $(INFORMATION_MESSAGE)
+endif
 	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/usblib.X.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=32MX220F032D
@@ -86,35 +95,41 @@ endif
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${OBJECTDIR}/USB/Generic\ Device\ Driver/usb_function_generic.o: USB/Generic\ Device\ Driver/usb_function_generic.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/USB/Generic\ Device\ Driver 
-	@${RM} ${OBJECTDIR}/USB/Generic\ Device\ Driver/usb_function_generic.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" -o "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" "USB/Generic Device Driver/usb_function_generic.c"   
+	@${MKDIR} "${OBJECTDIR}/USB/Generic Device Driver" 
+	@${RM} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o".d 
+	@${RM} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" 
+	@${FIXDEPS} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" -o "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" "USB/Generic Device Driver/usb_function_generic.c"     
 	
 ${OBJECTDIR}/USB/usb_device.o: USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/USB 
+	@${MKDIR} "${OBJECTDIR}/USB" 
 	@${RM} ${OBJECTDIR}/USB/usb_device.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/USB/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/usb_device.o.d" -o ${OBJECTDIR}/USB/usb_device.o USB/usb_device.c   
+	@${RM} ${OBJECTDIR}/USB/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/USB/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/usb_device.o.d" -o ${OBJECTDIR}/USB/usb_device.o USB/usb_device.c     
 	
 ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
+	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/usb_descriptors.o.d" -o ${OBJECTDIR}/usb_descriptors.o usb_descriptors.c   
+	@${RM} ${OBJECTDIR}/usb_descriptors.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/usb_descriptors.o.d" -o ${OBJECTDIR}/usb_descriptors.o usb_descriptors.c     
 	
 else
 ${OBJECTDIR}/USB/Generic\ Device\ Driver/usb_function_generic.o: USB/Generic\ Device\ Driver/usb_function_generic.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/USB/Generic\ Device\ Driver 
-	@${RM} ${OBJECTDIR}/USB/Generic\ Device\ Driver/usb_function_generic.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" -o "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" "USB/Generic Device Driver/usb_function_generic.c"   
+	@${MKDIR} "${OBJECTDIR}/USB/Generic Device Driver" 
+	@${RM} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o".d 
+	@${RM} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" 
+	@${FIXDEPS} "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o.d" -o "${OBJECTDIR}/USB/Generic Device Driver/usb_function_generic.o" "USB/Generic Device Driver/usb_function_generic.c"     
 	
 ${OBJECTDIR}/USB/usb_device.o: USB/usb_device.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/USB 
+	@${MKDIR} "${OBJECTDIR}/USB" 
 	@${RM} ${OBJECTDIR}/USB/usb_device.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/USB/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/usb_device.o.d" -o ${OBJECTDIR}/USB/usb_device.o USB/usb_device.c   
+	@${RM} ${OBJECTDIR}/USB/usb_device.o 
+	@${FIXDEPS} "${OBJECTDIR}/USB/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/USB/usb_device.o.d" -o ${OBJECTDIR}/USB/usb_device.o USB/usb_device.c     
 	
 ${OBJECTDIR}/usb_descriptors.o: usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR} 
+	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/usb_descriptors.o.d 
-	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/usb_descriptors.o.d" -o ${OBJECTDIR}/usb_descriptors.o usb_descriptors.c   
+	@${RM} ${OBJECTDIR}/usb_descriptors.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"./Include/" -MMD -MF "${OBJECTDIR}/usb_descriptors.o.d" -o ${OBJECTDIR}/usb_descriptors.o usb_descriptors.c     
 	
 endif
 

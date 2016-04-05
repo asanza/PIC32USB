@@ -103,7 +103,7 @@ vT1InterruptHandler:
 
  	.set		noreorder
 	.set 		noat
- 	.ent		xPortStartScheduler
+ 	.ent		vPortStartFirstTask
 
 vPortStartFirstTask:
 
@@ -111,7 +111,7 @@ vPortStartFirstTask:
 	created so far. */
 	portRESTORE_CONTEXT
 
-	.end xPortStartScheduler
+	.end vPortStartFirstTask
 
 
 
